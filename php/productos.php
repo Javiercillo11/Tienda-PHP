@@ -1,0 +1,57 @@
+<?php
+    //Me uno a la sesion creada
+    session_start();
+
+    //Si he intentado acceder a la pagina sin hacer login me envia al login automaticamente
+    if(!isset($_SESSION["usuario"])){
+        header("Location: ../login?redirigido=true");
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/comun.css">
+    <link rel="stylesheet" href="../css/productos.css">
+    <title>Productos Pirotécnicos</title>
+</head>
+<body>
+    <div id="contenedor">
+    <header>
+        <p>ROCKET FACTORY</p>
+    </header>
+    <section id="principal">
+        <nav>
+            <span>Productos</span>
+            <a href="logout.php" id="logout"><img id="desconectar" src="../img/logout"></a>
+            <a href="carrito.php" id="carrito"><img src="../img/carrito-compra.png"></a>
+            <a href="principal.php" id="atras"><img id="b" src="../img/back.png"></a>
+        </nav>
+        <?php
+            try {
+                $db = new PDO("mysql:dbname=Pirotecnia; host:localhost", "root","");
+
+                $consulta = "select * from CATEGORIAS;";
+                $sql = $db->query($consulta);
+
+                foreach ($sql as $datos) {
+                    echo '<a href="categoria.php?categoria='.$datos['codcat'].'" id="'.strtolower($datos['nombre']).'">'.$datos['nombre'].'</a>';
+                }
+
+            } catch (PDOException $e) {
+                echo "Error: " . $e->getMessage();
+            }
+        ?>
+    </section>
+    <footer>
+        <div id="logo"></div>
+        <div id="twitter"></div>
+        <div id="facebook"></div>
+        <div id="instagram"></div>
+    </footer>
+    </div>
+</body>
+</html>

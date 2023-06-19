@@ -1,0 +1,40 @@
+*{
+    font-size: .9em;
+    font-family: arial;
+}
+table,tr,th,td{
+    width: 80%;
+    align-items: center;
+    border: 2px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+
+td:first-child,td:nth-child(2),td:nth-child(3),td:nth-child(4) {
+    text-align: center;
+}
+
+td:nth-child(3)::after{
+    content: "g";
+}
+
+input:nth-child(2){
+    transition: all .6s ease;
+}
+
+input:nth-child(2):hover{
+    background-color: #0339d7;
+    color: #FFFFFF;
+    transition: all .6s ease;
+}
+
+input:nth-child(2):not(:hover){
+    background-color: #FFFFFF;
+    color: black;
+}

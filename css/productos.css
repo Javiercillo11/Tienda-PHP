@@ -1,0 +1,65 @@
+#petardos{
+    position: relative;
+    text-transform: uppercase;
+    padding: 100px;
+    text-decoration: none;
+    background: url(../img/petardos) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.3em;
+    color: white;
+    -webkit-text-stroke: 1.4px black;
+    border-radius: 40px;
+    top: 50px;
+    right: 830px;
+    transition: .5s ease;
+}
+
+#petardos:hover{
+    scale: 1.05;
+    box-shadow: 0 15px 25px rgba(229, 231, 236, 0.531);
+}
+
+#fuentes{
+    position: relative;
+    text-transform: uppercase;
+    padding: 100px;
+    text-decoration: none;
+    background: url(../img/petardos) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.3em;
+    color: white;
+    -webkit-text-stroke: 1.4px black;
+    border-radius: 40px;
+    transition: .4s ease;
+    top: 50px;
+    right: 50px;
+}
+
+#fuentes:hover{
+    scale: 1.05;
+    box-shadow: 0 15px 25px rgba(229, 231, 236, 0.531);
+}
+
+#tracas{
+    position: relative;
+    text-transform: uppercase;
+    padding: 100px;
+    text-decoration: none;
+    background: url(../img/petardos) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.3em;
+    color: white;
+    -webkit-text-stroke: 1.4px black;
+    border-radius: 40px;
+    transition: .4s ease;
+    top: 50px;
+    left: 700px;
+}
+
+#tracas:hover{
+    scale: 1.05;
+    box-shadow: 0 15px 25px rgba(229, 231, 236, 0.531);
+}

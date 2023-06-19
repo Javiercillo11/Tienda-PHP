@@ -1,0 +1,151 @@
+@font-face {
+    font-family: fuente;
+    src: url(../fuentes/rocketpoppunch.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/fireworks-fb.jpg");
+    background-size: 100%;
+    background-image: no-repeat;
+    background-position: top;
+}
+
+p{
+    font-family: fuente;
+    font-size: 80px;
+    color: white;
+    top: 50px;
+    right: 270px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+nav{
+    width: 100%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+nav span{
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+}
+
+#mensaje{
+    position: relative;
+    top: 140px;
+    left: 250px;
+}
+
+#principal{
+    width: 100%;
+    height: 460px;
+    background-image: url("../img/textura.webp");
+    background-size: 100%;
+    background-image: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+a{
+    float: right;
+}
+
+#desconectar{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 14px;
+}
+
+#carrito, #atras, #logout{
+    transition: 0.4s ease;
+}
+
+#carrito:hover, #atras:hover, #logout:hover{
+    scale: 1.2;
+}
+
+#b{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 14px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/galaxy.webp");
+    background-size: 100%;
+    background-image: no-repeat;
+    background-position: center;
+}
+
+#logo{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-image: url("../img/logo_anonimos.png");
+    background-size: 100%;
+    background-image: no-repeat;
+    left: 550px;
+}
+
+#twitter{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 30px;
+    left: 616px;
+}
+
+#facebook{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-image: url("../img/facebook.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 56px;
+    left: 636px;
+}
+
+#instagram{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/instagram.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 81px;
+    left: 666px;
+}

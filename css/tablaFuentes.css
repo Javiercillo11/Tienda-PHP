@@ -1,0 +1,47 @@
+*{
+    font-family: arial;
+}
+table,tr,th,td{
+    width: 70%;
+    align-items: center;
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: .85em;
+}
+
+table{
+    position: relative;
+    top: 25px;
+    left: 200px;
+}
+
+td:first-child,td:nth-child(2),td:nth-child(3),td:nth-child(4) {
+    text-align: center;
+}
+
+td:nth-child(3)::after{
+    content: "g";
+}
+
+td:nth-child(2)::after{
+    content: '.';
+}
+
+td:nth-child(4):after{
+    content: " unidades.";
+}
+
+input:nth-child(2){
+    transition: all .6s ease;
+}
+
+input:nth-child(2):hover{
+    background-color: #0339d7;
+    color: #FFFFFF;
+    transition: all .6s ease;
+}
+
+input:nth-child(2):not(:hover){
+    background-color: #FFFFFF;
+    color: black;
+}

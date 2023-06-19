@@ -1,0 +1,43 @@
+#productos{
+    position: relative;
+    text-transform: uppercase;
+    padding: 150px;
+    text-decoration: none;
+    background: url(../img/petardos) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.3em;
+    color: white;
+    -webkit-text-stroke: 1.4px black;
+    border-radius: 40px;
+    top: 40px;
+    right: 650px;
+    transition: .5s ease;
+}
+
+#productos:hover{
+    scale: 1.05;
+    box-shadow: 0 15px 25px rgba(229, 231, 236, 0.531);
+}
+
+#enviar{
+    position: relative;
+    text-transform: uppercase;
+    padding: 150px;
+    text-decoration: none;
+    background: url(../img/envios) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.3em;
+    color: white;
+    -webkit-text-stroke: 1.4px black;
+    border-radius: 40px;
+    transition: .4s ease;
+    top: 40px;
+    left: 430px;
+}
+
+#enviar:hover{
+    scale: 1.05;
+    box-shadow: 0 15px 25px rgba(229, 231, 236, 0.531);
+}

@@ -1,0 +1,88 @@
+*{
+   box-sizing: border-box;
+}
+@font-face {
+    font-family: fuente;
+    src: url(../fuentes/rocketpoppunch.otf);
+}
+body{
+     background: #131315;
+     font-family: var(--font-style);
+}
+h1{
+    font-family: fuente;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+h2,label, #submit, p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    position: absolute;
+    left: 655px;
+    top: 363px;
+    color: white;
+
+}
+.login-box{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   padding: 40px;
+   transform: translate(-50%, -50%);
+   background: #242026;
+   box-shadow: 0 15px 25px rgba(229, 231, 236, 0.531);
+   border-radius: 20px;
+}
+.login-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+.login-box .user-box input:focus~label, .login-box .user-box input:valid~label{
+    top: -85px;
+    left: 0;
+    color: white;;
+    font-size: 12px;
+}
+#submit{
+    padding: 10px 20px;
+    color: #242026;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid white;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#submit:hover{
+    background: rgb(226, 222, 219);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white, 0 0 20px white, 0 0 20px white, 0 0 20px white;
+}

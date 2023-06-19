@@ -1,0 +1,28 @@
+#formularioPedido{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    top: 10px;
+    left: 500px;
+}
+input#enviar{
+    font-size: .6em;
+}
+
+#formularioBorrar{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    top: 10px;
+    left: 400px; 
+}
+
+input#borrar{
+    font-size: .6em;
+}
+
+#fraseAdvertencia{
+    position: relative;
+    top: 140px;
+    left: 250px;
+}
