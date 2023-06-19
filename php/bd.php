@@ -176,10 +176,10 @@
         $mail->Ports = 587;
 
         //Introduzco mi correo de cuenta y contraseña 
-        $mail->Username = "daniel.andres1998@gmail.com";
+        $mail->Username = "correoprueba@gmail.com";
         $mail->Password = "ermfiqjclqktmioh"; //Contraseña de aplicación generada en configuracion
 
-        $mail->SetFrom("daniel.andres1998@gmail.com","noreply@rocket_factory.pum");
+        $mail->SetFrom("correoprueba@gmail.com","noreply@rocket_factory.pum");
 
         $mail->Subject = $asunto; //Aunto del correo
         $mail->MSgHTML($contenido); //contenido del correo
